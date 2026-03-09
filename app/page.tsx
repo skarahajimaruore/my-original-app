@@ -201,7 +201,7 @@ export default function Home() {
 
           {entries.length === 0 ? (
             <p className="text-xs text-slate-500">
-              まだ記録がありません。今日食べたものを登録してみましょう。
+              まだ記録がありません。今日食べたものを登録してみましょう！
             </p>
           ) : (
             <ul className="space-y-3">
