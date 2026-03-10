@@ -2,6 +2,7 @@
 import { neon } from '@neondatabase/serverless';
 import { revalidatePath } from 'next/cache';
 
+export const dynamic = 'force-dynamic';
 // 日付取得用の関数
 function getTodayString() {
   const d = new Date();
