@@ -1,6 +1,7 @@
 // app/db-test/page.tsx
 import { neon } from '@neondatabase/serverless';
 import { revalidatePath } from 'next/cache';
+import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 // 日付取得用の関数
@@ -65,6 +66,17 @@ export default async function Home() {
           <p className="mt-2 text-center text-sm text-slate-600">
             データはクラウド上のPostgresに保存されます。
           </p>
+          {/* システム構成図へのリンクボタン */}
+<div className="mt-4 flex justify-center">
+  <Link 
+    href="/arch" 
+    className="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 text-xs font-medium text-white shadow-lg transition-all hover:bg-slate-700 hover:scale-105 active:scale-95"
+  >
+    <span className="text-emerald-400">✦</span>
+    システム構成図を表示
+  </Link>
+</div>
+          
         </header>
 
         {/* 合計表示エリア */}
